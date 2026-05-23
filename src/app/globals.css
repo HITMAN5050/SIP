@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-shreeji-bg: #07111F;
+  --color-shreeji-bg-secondary: #0D1B2A;
+  --color-shreeji-primary: #0F766E;
+  --color-shreeji-accent: #14B8A6;
+  --color-shreeji-gold: #C6A15B;
+  --color-shreeji-text: #F8FAFC;
+  --color-shreeji-text-secondary: #94A3B8;
+  --color-shreeji-card: rgba(255, 255, 255, 0.03);
+  --color-shreeji-border: rgba(255, 255, 255, 0.08);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-plus-jakarta);
+}
+
+:root {
+  --background: #07111F;
+  --foreground: #F8FAFC;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #07111F;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0F766E;
+}
+
+/* Glassmorphism utility */
+.glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-card:hover {
+  border-color: rgba(20, 184, 166, 0.2);
+}
+
+/* Custom background animations */
+@keyframes pulse-slow {
+  0%, 100% {
+    transform: scale(1) translate(0px, 0px);
+    opacity: 0.2;
+  }
+  33% {
+    transform: scale(1.1) translate(30px, -50px);
+    opacity: 0.35;
+  }
+  66% {
+    transform: scale(0.95) translate(-20px, 20px);
+    opacity: 0.15;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 15s infinite ease-in-out;
+}
+
