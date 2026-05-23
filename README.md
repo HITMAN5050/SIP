@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shreeji Wealth — Premium Financial Advisory Website
 
-## Getting Started
+A complete, production-grade, highly responsive premium wealth advisory website built for **Shreeji Wealth**. This platform helps families, executives, and high-net-worth individuals navigate Systematic Investment Plans (SIP), mutual funds, retirement goals, tax-saving schemes, and portfolio allocations.
 
-First, run the development server:
+## 🛠 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Frontend**: Next.js 16 (App Router) & React 19
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion (smooth, high-end micro-interactions)
+- **Icons**: Lucide React
+- **Language**: TypeScript
+
+---
+
+## ✨ Features Implemented
+
+1. **Fintech Hero & Dashboard**: A responsive, CSS/SVG-animated mock dashboard displaying a portfolio trajectory, asset allocation summaries, and secure badge highlights.
+2. **Interactive SIP Growth Estimator**: A dynamic tool with sliders allowing users to calculate compound returns live. Renders:
+   - An **SVG Growth Curve** mapping accumulated wealth against invested capital.
+   - An **SVG Ring Chart** displaying asset allocation ratios.
+3. **Knowledge Base (Blog)**: Supports interactive category tab filtering (All, SIP, Wealth, Tax-Saving, Retirement) and a live text search bar to filter article cards.
+4. **Advisory Intake Forms**: Contact and Consultation booking pages integrated with client-side validation, submit indicators, and dedicated Next.js API endpoints (`/api/contact` and `/api/book`) to securely log user requests.
+5. **Modern Premium Aesthetics**: Curated color theme using deep dark tones (`#07111F`, `#0D1B2A`), emerald accents (`#0F766E`, `#14B8A6`), gold accents (`#C6A15B`), glowing animated background orbs, custom scrollbars, and fluid layout cards.
+6. **SEBI & Regulatory Compliance**: Standard financial disclosures, disclaimer alerts, and claim statements built directly into the site footer.
+
+---
+
+## 📂 Project Directory Structure
+
+```text
+src/
+├── app/                  # App Router Routes
+│   ├── api/              # Form API Routes
+│   │   ├── book/         # POST /api/book endpoint
+│   │   └── contact/      # POST /api/contact endpoint
+│   ├── about/            # Founder profiles & timeline
+│   ├── services/         # 6 detailed advisory pages
+│   ├── sip-calculator/   # Interactive sliders & graphs
+│   ├── blog/             # Resources catalog and [slug] articles
+│   ├── book/             # Intake scheduler
+│   ├── contact/          # Helpdesk coordinates & form
+│   ├── globals.css       # Custom scrollbars, animations, & glassmorphism
+│   ├── layout.tsx        # Injecting Google Fonts (Inter + Plus Jakarta Sans)
+│   └── page.tsx          # Landing page
+├── components/           # Global components (Navbar, Footer, BackgroundOrbs)
+├── data/                 # Dynamic markdown and service catalogs
+└── lib/                  # Helper utilities
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Installation
+Clone the repository, navigate into the project directory, and install dependencies:
+```bash
+npm install
+```
 
-## Learn More
+### 2. Development Mode
+Start the development server:
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. Production Build
+Compile and verify the application for production deployment:
+```bash
+npm run build
+```
+This checks TypeScript safety, compiles pages, and exports static outputs.
