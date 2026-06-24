@@ -16,7 +16,6 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import { servicesData } from "@/data/services";
 import { faqsData } from "@/data/faqs";
-import { testimonialsData } from "@/data/testimonials";
 
 export default function Home() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
@@ -435,52 +434,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 7 — TESTIMONIALS */}
-      <section className="relative z-10 py-20 md:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-            <h2 className="font-display font-bold text-3xl sm:text-4xl text-shreeji-text tracking-tight">
-              Trusted By{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-shreeji-accent to-shreeji-gold">
-                High-End Professionals
-              </span>
-            </h2>
-            <p className="text-sm text-shreeji-text-secondary leading-relaxed">
-              Discover how we help doctors, entrepreneurs, and executives manage their assets.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {testimonialsData.map((test) => (
-              <div key={test.id} className="glass-card rounded-2xl p-6 flex flex-col justify-between shadow-xl">
-                <div className="space-y-4">
-                  {/* Star rating */}
-                  <div className="flex space-x-1">
-                    {[...Array(test.rating)].map((_, i) => (
-                      <span key={i} className="text-shreeji-gold text-lg">★</span>
-                    ))}
-                  </div>
-                  <p className="text-xs text-shreeji-text-secondary leading-relaxed italic">
-                    &ldquo;{test.content}&rdquo;
-                  </p>
-                </div>
-
-                <div className="pt-6 mt-6 border-t border-white/5 flex items-center space-x-3">
-                  <div className="h-9 w-9 rounded-full bg-gradient-to-br from-shreeji-primary/20 to-shreeji-accent/20 flex items-center justify-center font-display font-bold text-xs text-shreeji-accent">
-                    {test.name[0] + test.name.split(" ")[1]?.[0]}
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-semibold text-white">{test.name}</h4>
-                    <p className="text-[10px] text-shreeji-text-secondary">{test.role}, {test.company}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
 
       {/* SECTION 8 — FAQ */}
       <section className="relative z-10 py-20 md:py-28 bg-shreeji-bg-secondary/20 border-t border-shreeji-border">
