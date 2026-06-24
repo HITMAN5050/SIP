@@ -178,7 +178,7 @@ export default function Footer() {
         {/* Financial Compliance / Regulatory Disclaimer */}
         <div className="mt-12 pt-8 border-t border-shreeji-border text-[11px] leading-relaxed text-shreeji-text-secondary/70">
           <p className="mb-3">
-            <strong>Regulatory Disclaimer:</strong> Mutual Fund investments are subject to market risks. Please read all scheme-related documents carefully before investing. Insurance is the subject matter of solicitation. Please read the policy documents carefully before purchasing any insurance product. Past performance is not indicative of future returns. Shreeji Wealth is an authorized Mutual Fund Distributor partnered with NJ India Invest Pvt. Ltd. (NJ Wealth), one of India&apos;s leading financial distribution platforms.
+            <strong>Regulatory Disclaimer:</strong> Mutual Fund investments are subject to market risks. Please read all scheme-related documents carefully before investing. Insurance is the subject matter of solicitation. Please read the policy documents carefully before purchasing any insurance product. Past performance is not indicative of future returns. Shreeji Wealth is an authorized Mutual Fund Distributor registered with the Association of Mutual Funds in India (AMFI).
           </p>
           <p>
             The tools and calculators provided on this website are for educational and illustrative purposes only. Projected returns are calculated based on mathematical formulations and should not be construed as investment advice or guaranteed gains.

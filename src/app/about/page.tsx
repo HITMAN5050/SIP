@@ -13,8 +13,8 @@ export default function About() {
     },
     {
       year: "2009",
-      title: "NJ Wealth Partnership",
-      desc: "Inspired by our own success, we obtained our Mutual Fund Distributor Code and partnered with NJ India Invest Pvt. Ltd., one of India's leading financial distribution platforms, to offer structured wealth solutions."
+      title: "AMFI Registration",
+      desc: "Inspired by our own success, we obtained our Mutual Fund Distributor Code (ARN) registered with AMFI (Association of Mutual Funds in India) to offer structured wealth solutions."
     },
     {
       year: "2015",
@@ -94,7 +94,7 @@ export default function About() {
                     Our journey in the financial services industry began in 2008 as investors. Over the years, we experienced firsthand the power of disciplined, long-term wealth creation. This journey gave us valuable insights into financial markets and reinforced our belief that systematic investing is one of the most effective ways to achieve financial independence.
                   </p>
                   <p>
-                    Motivated by our own investment success and a passion for helping others secure their financial future, we became an authorized Mutual Fund Distributor associated with NJ India Invest Pvt. Ltd. (NJ Wealth), one of India&apos;s leading financial distribution organizations.
+                    Motivated by our own investment success and a passion for helping others secure their financial future, we registered as an authorized Mutual Fund Distributor (ARN Holder) with AMFI (Association of Mutual Funds in India).
                   </p>
                   <p>
                     As we built long-lasting relationships with our clients, we recognized that financial well-being is not just about growing wealth—it is also about protecting it. To provide complete financial solutions under one roof, we expanded our services to include Life Insurance, Health Insurance, and General Insurance, helping our clients safeguard themselves, their families, and their valuable assets against unforeseen risks.
