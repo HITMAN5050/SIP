@@ -11,8 +11,7 @@ import {
   Percent,
   Coins,
   CheckCircle2,
-  Calendar,
-  ArrowRight
+  Calendar
 } from "lucide-react";
 import { motion } from "framer-motion";
 

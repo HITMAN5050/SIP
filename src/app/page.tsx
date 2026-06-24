@@ -125,7 +125,7 @@ export default function Home() {
                   href="/book"
                   className="w-full sm:w-auto px-8 py-3.5 rounded-full text-base font-semibold tracking-wide text-shreeji-text border border-shreeji-border bg-white/5 hover:bg-white/10 transition-all duration-300 text-center"
                 >
-                  Book Free Consultation
+                  Grow With Us
                 </Link>
               </motion.div>
             </div>
@@ -564,7 +564,7 @@ export default function Home() {
                   className="w-full px-6 py-3.5 rounded-full text-sm font-semibold tracking-wide text-white bg-gradient-to-r from-shreeji-primary to-shreeji-accent text-center shadow-lg shadow-shreeji-accent/15 hover:opacity-95 flex items-center justify-center space-x-2"
                 >
                   <Calendar className="h-4.5 w-4.5" />
-                  <span>Schedule Consultation</span>
+                  <span>Grow With Us</span>
                 </Link>
 
                 <a

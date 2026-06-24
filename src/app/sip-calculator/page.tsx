@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Calculator, ArrowRight, LineChart, PieChart, ShieldCheck } from "lucide-react";
-import { motion } from "framer-motion";
+import { Calculator, ShieldCheck } from "lucide-react";
 
 export default function SipCalculator() {
   const [monthlySip, setMonthlySip] = useState(10000);
