@@ -48,7 +48,7 @@ export default function BookConsultation() {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-shreeji-primary/10 border border-shreeji-primary/20">
             <Calendar className="h-4 w-4 text-shreeji-accent" />
-            <span className="text-xs font-semibold tracking-wider text-shreeji-accent uppercase">Advisory</span>
+            <span className="text-xs font-semibold tracking-wider text-shreeji-accent uppercase">Wealth Planning</span>
           </div>
           
           <h1 className="font-display font-bold text-4xl sm:text-5xl text-shreeji-text tracking-tight">
@@ -59,7 +59,7 @@ export default function BookConsultation() {
           </h1>
           
           <p className="text-sm sm:text-base text-shreeji-text-secondary leading-relaxed">
-            Take the first step toward structured compounding. Arrange a private, complimentary briefing session with our advisory desk.
+            Take the first step toward structured compounding. Arrange a private, complimentary briefing session with our wealth desk.
           </p>
         </div>
 
@@ -138,7 +138,7 @@ export default function BookConsultation() {
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
-                <h3 className="font-display font-bold text-lg text-white mb-2">Advisory Intake Form</h3>
+                <h3 className="font-display font-bold text-lg text-white mb-2">Wealth Planning Intake Form</h3>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">

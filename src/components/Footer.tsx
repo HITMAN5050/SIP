@@ -57,7 +57,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-sm text-shreeji-text-secondary leading-relaxed max-w-xs">
-              Empowering families and professionals with disciplined, goal-based wealth planning, SIP investments, and personalized advisory.
+              Empowering families and professionals with disciplined, goal-based wealth planning, SIP investments, and personalized solutions.
             </p>
             {/* Social Links */}
             <div className="flex items-center space-x-4 pt-2">
@@ -106,7 +106,7 @@ export default function Footer() {
           {/* Services */}
           <div>
             <h4 className="font-display font-semibold text-sm tracking-wider text-shreeji-text uppercase mb-4">
-              Advisory Services
+              Our Services
             </h4>
             <ul className="space-y-2.5 text-sm">
               <li>
@@ -116,7 +116,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services#mutual-funds" className="hover:text-shreeji-accent transition-colors">
-                  Mutual Fund Advisory
+                  Mutual Funds
                 </Link>
               </li>
               <li>
@@ -166,11 +166,8 @@ export default function Footer() {
             <div className="flex items-start space-x-2.5 text-sm">
               <Mail className="h-4 w-4 text-shreeji-accent shrink-0 mt-1" />
               <div className="flex flex-col space-y-1">
-                <a href="mailto:contact@shreejiconsultants.com" className="hover:text-shreeji-accent transition-colors">
-                  contact@shreejiconsultants.com
-                </a>
-                <a href="mailto:shreejiwealthcreator@gmail.com" className="hover:text-shreeji-accent transition-colors">
-                  shreejiwealthcreator@gmail.com
+                <a href="mailto:shreejiwealth9@gmail.com" className="hover:text-shreeji-accent transition-colors">
+                  shreejiwealth9@gmail.com
                 </a>
               </div>
             </div>

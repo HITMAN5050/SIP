@@ -102,11 +102,8 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-white mb-0.5">Email Support</h4>
                     <div className="flex flex-col space-y-1.5 leading-relaxed">
-                      <a href="mailto:contact@shreejiconsultants.com" className="hover:text-shreeji-accent transition-colors">
-                        contact@shreejiconsultants.com
-                      </a>
-                      <a href="mailto:shreejiwealthcreator@gmail.com" className="hover:text-shreeji-accent transition-colors">
-                        shreejiwealthcreator@gmail.com
+                      <a href="mailto:shreejiwealth9@gmail.com" className="hover:text-shreeji-accent transition-colors">
+                        shreejiwealth9@gmail.com
                       </a>
                     </div>
                   </div>

@@ -37,9 +37,9 @@ export const servicesData: ServiceItem[] = [
   },
   {
     id: "mutual-funds",
-    title: "Mutual Funds & Portfolio Advisory",
+    title: "Mutual Funds & Portfolio Solutions",
     shortDesc: "Diversify your wealth across equity, debt, hybrid mutual funds, and custom PMS portfolios.",
-    fullDesc: "Access professionally managed mutual fund portfolios tailored specifically to your financial objectives. Our selection process covers Equity PMS, Mutual Fund PMS (MARS), Fixed Deposits, Bonds of PSU Banks, Capital Gain Bonds, RBI Bonds, Loan against Mutual Funds, Direct Equity, and IPO advisory.",
+    fullDesc: "Access professionally managed mutual fund portfolios tailored specifically to your financial objectives. Our selection process covers Equity PMS, Mutual Fund PMS (MARS), Fixed Deposits, Bonds of PSU Banks, Capital Gain Bonds, RBI Bonds, Loan against Mutual Funds, Direct Equity, and IPO investments.",
     iconName: "Layers",
     benefits: [
       "Instant diversification across equity and debt markets",

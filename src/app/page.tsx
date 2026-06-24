@@ -81,7 +81,7 @@ export default function Home() {
               >
                 <Award className="h-4 w-4 text-shreeji-accent" />
                 <span className="text-xs font-semibold tracking-wider text-shreeji-accent uppercase">
-                  Premium Financial Advisory
+                  Premium Wealth Solutions
                 </span>
               </motion.div>
 
@@ -421,7 +421,7 @@ export default function Home() {
               { step: "01", title: "Understand Goals", desc: "We sit down to map your retirement age, children's education milestones, and liquid emergency needs." },
               { step: "02", title: "Build Strategy", desc: "We design a customized equity-to-debt asset allocation map matching your personal volatility thresholds." },
               { step: "03", title: "Start Investing", desc: "Setup paperless auto-debit SIP mandates or execute tactical lump-sum deployments safely." },
-              { step: "04", title: "Track & Grow", desc: "Get access to our mobile tracking portal with semi-annual portfolio balancing advisory." }
+              { step: "04", title: "Track & Grow", desc: "Get access to our mobile tracking portal with semi-annual portfolio rebalancing reviews." }
             ].map((proc, idx) => (
               <div key={idx} className="relative flex flex-col space-y-4 p-6 glass-card rounded-2xl">
                 <span className="font-display font-bold text-4xl text-shreeji-accent/25 block leading-none">{proc.step}</span>

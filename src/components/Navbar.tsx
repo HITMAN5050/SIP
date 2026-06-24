@@ -234,7 +234,7 @@ export default function Navbar() {
                   Grow With Us
                 </Link>
                 <div className="text-center text-xs text-shreeji-text-secondary">
-                  Secured & Confident Financial Advisory
+                  Secured & Confident Wealth Solutions
                 </div>
               </div>
             </motion.div>

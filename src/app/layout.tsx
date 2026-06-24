@@ -18,9 +18,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Shreeji Wealth | Premium Financial Advisory & Wealth Management",
+  title: "Shreeji Wealth | Premium Wealth Management & Solutions",
   description: "Secure your financial future with Shreeji Wealth. Expert guidance on SIP investments, mutual funds, retirement planning, and tax-saving solutions.",
-  keywords: ["SIP", "Mutual Funds", "Wealth Planning", "Retirement Planning", "Tax Saving", "Financial Advisory", "Shreeji Wealth"],
+  keywords: ["SIP", "Mutual Funds", "Wealth Planning", "Retirement Planning", "Tax Saving", "Wealth Solutions", "Shreeji Wealth"],
   verification: {
     other: {
       "facebook-domain-verification": ["tybxhecox48v99hbvsvby71e3vfz1u"],

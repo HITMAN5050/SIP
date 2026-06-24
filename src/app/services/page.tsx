@@ -119,7 +119,7 @@ export default function Services() {
                   <div className={`lg:col-span-5 ${isEven ? "" : "lg:order-1"}`}>
                     <div className="glass-card rounded-2xl p-6 space-y-6 shadow-xl">
                       <div>
-                        <span className="text-[10px] text-shreeji-accent font-semibold uppercase tracking-wider">Advisory Process</span>
+                        <span className="text-[10px] text-shreeji-accent font-semibold uppercase tracking-wider">Service Process</span>
                         <h4 className="font-display font-bold text-base text-white mt-1">Our Strategy Checklist</h4>
                       </div>
 

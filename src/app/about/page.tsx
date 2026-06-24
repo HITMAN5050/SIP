@@ -14,7 +14,7 @@ export default function About() {
     {
       year: "2009",
       title: "NJ Wealth Partnership",
-      desc: "Inspired by our own success, we obtained our Mutual Fund Distributor Code and partnered with NJ India Invest Pvt. Ltd., one of India's leading financial distribution platforms, to offer structured advisory."
+      desc: "Inspired by our own success, we obtained our Mutual Fund Distributor Code and partnered with NJ India Invest Pvt. Ltd., one of India's leading financial distribution platforms, to offer structured wealth solutions."
     },
     {
       year: "2015",
