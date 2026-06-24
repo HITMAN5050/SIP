@@ -198,8 +198,8 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-shreeji-bg via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 p-4 glass-card rounded-lg">
-                  <p className="text-xs text-shreeji-gold font-semibold uppercase tracking-wider mb-1">AMFI Registered</p>
-                  <p className="text-xs text-white">Authorized Mutual Fund Distributor registered with AMFI (Association of Mutual Funds in India).</p>
+                  <p className="text-xs text-shreeji-gold font-semibold uppercase tracking-wider mb-1">AMFI Registered (ARN-165950)</p>
+                  <p className="text-xs text-white">Authorized Mutual Fund Distributor registered with AMFI under ARN-165950.</p>
                 </div>
               </div>
             </div>
@@ -227,8 +227,8 @@ export default function Home() {
                   <span className="text-xs text-shreeji-text-secondary">Investment Experience</span>
                 </div>
                 <div>
-                  <span className="font-display font-bold text-2xl text-shreeji-gold block">AMFI Registered</span>
-                  <span className="text-xs text-shreeji-text-secondary">Mutual Fund Distributor</span>
+                  <span className="font-display font-bold text-2xl text-shreeji-gold block">ARN-165950</span>
+                  <span className="text-xs text-shreeji-text-secondary">AMFI Registered Distributor</span>
                 </div>
               </div>
 
