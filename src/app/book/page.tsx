@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Calendar, Compass, ShieldCheck, CheckCircle2, User, Phone, Mail, Award, Clock } from "lucide-react";
+import { Calendar, Compass, ShieldCheck, CheckCircle2, User, Award, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function BookConsultation() {
@@ -88,7 +88,7 @@ export default function BookConsultation() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-white mb-0.5">Goal Allocation Diagnostics</h4>
-                    <p className="text-xs leading-relaxed">We will evaluate your retirement timelines and children's milestones to project inflation-proof gaps.</p>
+                    <p className="text-xs leading-relaxed">We will evaluate your retirement timelines and children&apos;s milestones to project inflation-proof gaps.</p>
                   </div>
                 </div>
 
@@ -129,7 +129,7 @@ export default function BookConsultation() {
                 </div>
                 <h3 className="font-display font-bold text-xl text-white">Consultation Booked</h3>
                 <p className="text-xs text-shreeji-text-secondary max-w-sm leading-relaxed">
-                  Excellent! Your briefing request has been processed. A coordinator from our Ahmedabad wealth desk will text or call you to schedule a calendar date and time.
+                  Excellent! Your briefing request has been processed. A coordinator from our Surat wealth desk will text or call you to schedule a calendar date and time.
                 </p>
                 <div className="flex items-center space-x-2 text-[10px] text-shreeji-gold bg-white/5 border border-white/5 px-3 py-1.5 rounded-lg">
                   <Clock className="h-3.5 w-3.5" />
@@ -160,7 +160,7 @@ export default function BookConsultation() {
                       required
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="e.g. +91 98765 43210"
+                      placeholder="e.g. +91 99798 69788"
                       className="w-full px-4 py-2.5 rounded-lg text-xs bg-white/5 border border-shreeji-border text-white placeholder-shreeji-text-secondary focus:outline-none focus:border-shreeji-accent transition-colors"
                     />
                   </div>

@@ -5,16 +5,12 @@ import Link from "next/link";
 import {
   TrendingUp,
   ArrowRight,
-  ShieldCheck,
   ChevronDown,
   LineChart,
   Calendar,
   Layers,
   Award,
-  Users,
   Compass,
-  ArrowUpRight,
-  Calculator,
   MessageSquare
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -134,86 +130,22 @@ export default function Home() {
               </motion.div>
             </div>
 
-            {/* Right Dashboard Mock */}
+            {/* Right Side Partners Photo */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="lg:col-span-5 relative w-full max-w-md mx-auto"
             >
-              {/* Premium Dashboard Frame */}
-              <div className="glass-card rounded-2xl p-6 relative overflow-hidden shadow-2xl shadow-black/40">
-                {/* Header info */}
-                <div className="flex justify-between items-center mb-6">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
-                    <span className="text-xs text-shreeji-text-secondary">Shreeji Client Portal</span>
-                  </div>
-                  <span className="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400">
-                    Active +14.8% YoY
-                  </span>
+              <div className="glass-card rounded-2xl p-2 relative overflow-hidden shadow-2xl shadow-black/40 border border-white/5">
+                <div className="relative rounded-xl overflow-hidden bg-slate-900 w-full">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/Mamu.jpeg"
+                    alt="Sanjay Solanki & Hiren Surati - Partners of Shreeji Wealth"
+                    className="w-full h-auto object-contain"
+                  />
                 </div>
-
-                {/* Balance amount */}
-                <div className="mb-6">
-                  <span className="text-xs text-shreeji-text-secondary tracking-wider uppercase block">Total Net Worth</span>
-                  <span className="text-3xl font-bold text-shreeji-text font-display">₹1,24,80,500</span>
-                </div>
-
-                {/* SVG Graph Visualization */}
-                <div className="relative h-40 w-full mb-6">
-                  <svg className="w-full h-full overflow-visible" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <defs>
-                      <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stopColor="#14B8A6" stopOpacity="0.3" />
-                        <stop offset="100%" stopColor="#14B8A6" stopOpacity="0.0" />
-                      </linearGradient>
-                    </defs>
-                    {/* Shadow Area under line */}
-                    <path
-                      d="M0 80 Q 20 60, 40 70 T 80 30 T 100 15 L 100 100 L 0 100 Z"
-                      fill="url(#chartGrad)"
-                    />
-                    {/* Growth Line */}
-                    <motion.path
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 1.5, ease: "easeInOut" }}
-                      d="M0 80 Q 20 60, 40 70 T 80 30 T 100 15"
-                      fill="none"
-                      stroke="#14B8A6"
-                      strokeWidth="2.5"
-                    />
-                    {/* Glowing point */}
-                    <circle cx="100" cy="15" r="3" fill="#C6A15B" className="animate-ping" />
-                    <circle cx="100" cy="15" r="2" fill="#C6A15B" />
-                  </svg>
-                </div>
-
-                {/* Allocation stats */}
-                <div className="grid grid-cols-3 gap-2.5 text-center">
-                  <div className="p-2.5 rounded bg-white/5 border border-white/5">
-                    <span className="text-[10px] text-shreeji-text-secondary uppercase block mb-1">Mutual Funds</span>
-                    <span className="text-sm font-semibold text-shreeji-text">70%</span>
-                  </div>
-                  <div className="p-2.5 rounded bg-white/5 border border-white/5">
-                    <span className="text-[10px] text-shreeji-text-secondary uppercase block mb-1">Debt / Gold</span>
-                    <span className="text-sm font-semibold text-shreeji-gold">20%</span>
-                  </div>
-                  <div className="p-2.5 rounded bg-white/5 border border-white/5">
-                    <span className="text-[10px] text-shreeji-text-secondary uppercase block mb-1">Liquid Cash</span>
-                    <span className="text-sm font-semibold text-shreeji-text">10%</span>
-                  </div>
-                </div>
-
-              </div>
-
-              {/* Floating micro items */}
-              <div className="absolute -top-4 -right-4 glass-card px-4 py-2.5 rounded-lg flex items-center space-x-2 shadow-lg max-w-xs animate-bounce" style={{ animationDuration: '4s' }}>
-                <div className="p-1 rounded bg-teal-500/20 text-teal-400">
-                  <ShieldCheck className="h-4 w-4" />
-                </div>
-                <span className="text-[11px] font-medium text-white">100% Secure Investing</span>
               </div>
             </motion.div>
 
@@ -230,7 +162,7 @@ export default function Home() {
               { title: "Personalized Financial Guidance", desc: "No cookie-cutter algorithms. Real expert consultations customized for you.", icon: Compass },
               { title: "Goal-Based Investing", desc: "Align portfolios strictly to education, home purchases, or early retirement.", icon: LineChart },
               { title: "Long-Term Wealth Planning", desc: "Maintain low portfolio turnover to optimize taxation and maximize compounding.", icon: Layers },
-              { title: "SIP Investment Expertise", desc: "Scientific fund selection methodology backed by 15+ years of research.", icon: TrendingUp }
+              { title: "SIP Investment Expertise", desc: "Scientific fund selection methodology backed by 18+ years of experience.", icon: TrendingUp }
             ].map((metric, idx) => (
               <motion.div
                 key={idx}
@@ -259,7 +191,6 @@ export default function Home() {
             <div className="relative group max-w-md mx-auto w-full">
               <div className="absolute inset-0 bg-gradient-to-br from-shreeji-primary to-shreeji-accent rounded-2xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500" />
               <div className="relative aspect-4/3 rounded-2xl overflow-hidden border border-shreeji-border shadow-2xl bg-slate-900">
-                {/* Premium Office visuals placeholder */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
@@ -268,8 +199,8 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-shreeji-bg via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 p-4 glass-card rounded-lg">
-                  <p className="text-xs text-shreeji-gold font-semibold uppercase tracking-wider mb-1">Financial Stability</p>
-                  <p className="text-xs text-white">Advising over 450+ families with ₹250+ Crores under active management.</p>
+                  <p className="text-xs text-shreeji-gold font-semibold uppercase tracking-wider mb-1">NJ Wealth Partner</p>
+                  <p className="text-xs text-white">Authorized Mutual Fund Distributor partnered with India&apos;s leading financial distribution platform.</p>
                 </div>
               </div>
             </div>
@@ -284,21 +215,21 @@ export default function Home() {
               </h2>
               
               <p className="text-sm text-shreeji-text-secondary leading-relaxed">
-                At Shreeji Wealth, we believe compounding is not just a mathematical formula; it is a discipline. For over 15 years, we have served as the financial anchors for individuals and corporate leaders alike, offering conflict-free investment advice.
+                At Shreeji Wealth, we believe compounding is not just a mathematical formula; it is a discipline. Since 2008, we have guided clients through the power of disciplined, long-term systematic investing, offering reliable and personalized financial solutions.
               </p>
               
               <p className="text-sm text-shreeji-text-secondary leading-relaxed">
-                Our approach focuses strictly on asset allocation and goals. We do not chase short-term market bubbles. Instead, we structure portfolios engineered to withstand economic volatility and secure your future lifestyle.
+                Our approach focuses strictly on asset allocation and goals. We do not chase short-term market bubbles. Instead, we structure portfolios and insurance solutions engineered to protect your family&apos;s future and deliver lasting value.
               </p>
 
               <div className="pt-4 grid grid-cols-2 gap-6 border-t border-shreeji-border">
                 <div>
-                  <span className="font-display font-bold text-2xl text-shreeji-accent block">15+ Years</span>
-                  <span className="text-xs text-shreeji-text-secondary">Of Client Dedication</span>
+                  <span className="font-display font-bold text-2xl text-shreeji-accent block">18+ Years</span>
+                  <span className="text-xs text-shreeji-text-secondary">Investment Experience</span>
                 </div>
                 <div>
-                  <span className="font-display font-bold text-2xl text-shreeji-gold block">99.2%</span>
-                  <span className="text-xs text-shreeji-text-secondary">Client Retention Rate</span>
+                  <span className="font-display font-bold text-2xl text-shreeji-gold block">NJ Partner</span>
+                  <span className="text-xs text-shreeji-text-secondary">Authorized Distributor</span>
                 </div>
               </div>
 
@@ -334,7 +265,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {servicesData.map((service, idx) => {
+            {servicesData.map((service) => {
               return (
                 <motion.div
                   key={service.id}
@@ -637,7 +568,7 @@ export default function Home() {
                 </Link>
 
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919979869788"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full px-6 py-3.5 rounded-full text-sm font-semibold tracking-wide text-white border border-emerald-500/20 bg-emerald-500/10 hover:bg-emerald-500/15 text-center flex items-center justify-center space-x-2 transition-colors"

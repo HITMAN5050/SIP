@@ -77,7 +77,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-white mb-0.5">Headquarters</h4>
                     <p className="leading-relaxed">
-                      302, Premium Trade Center, Financial District, SG Highway, Ahmedabad, Gujarat - 380054
+                      315, Western Business Hub, B/h. Trinity Business Park, Green City Road, Pal-Adajan, Surat, Gujarat - 394510
                     </p>
                   </div>
                 </div>
@@ -86,9 +86,14 @@ export default function Contact() {
                   <Phone className="h-5 w-5 text-shreeji-accent shrink-0 mt-0.5" />
                   <div>
                     <h4 className="font-semibold text-white mb-0.5">Direct Helpdesk</h4>
-                    <p className="leading-relaxed">
-                      <a href="tel:+919876543210" className="hover:text-shreeji-accent transition-colors">+91 98765 43210</a>
-                    </p>
+                    <div className="flex flex-col space-y-1.5 leading-relaxed">
+                      <a href="tel:+919979869788" className="hover:text-shreeji-accent transition-colors">
+                        +91 99798 69788 (Sanjay Solanki)
+                      </a>
+                      <a href="tel:+919909002988" className="hover:text-shreeji-accent transition-colors">
+                        +91 99090 02988 (Hiren Surati)
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -96,9 +101,14 @@ export default function Contact() {
                   <Mail className="h-5 w-5 text-shreeji-accent shrink-0 mt-0.5" />
                   <div>
                     <h4 className="font-semibold text-white mb-0.5">Email Support</h4>
-                    <p className="leading-relaxed">
-                      <a href="mailto:info@shreejiwealth.com" className="hover:text-shreeji-accent transition-colors">info@shreejiwealth.com</a>
-                    </p>
+                    <div className="flex flex-col space-y-1.5 leading-relaxed">
+                      <a href="mailto:contact@shreejiconsultants.com" className="hover:text-shreeji-accent transition-colors">
+                        contact@shreejiconsultants.com
+                      </a>
+                      <a href="mailto:shreejiwealthcreator@gmail.com" className="hover:text-shreeji-accent transition-colors">
+                        shreejiwealthcreator@gmail.com
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -119,7 +129,7 @@ export default function Contact() {
                 <p className="text-xs text-shreeji-text-secondary">Ping our chat support on WhatsApp for quick SIP queries.</p>
               </div>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919979869788"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-5 py-2.5 rounded-full text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-700 transition-colors flex items-center space-x-1.5"
@@ -143,7 +153,7 @@ export default function Contact() {
                 </div>
                 <h3 className="font-display font-bold text-xl text-white">Inquiry Received</h3>
                 <p className="text-xs text-shreeji-text-secondary max-w-sm leading-relaxed">
-                  Thank you for reaching out to Shreeji Wealth. A financial consultant from our Ahmedabad office will review your details and call you back within 2 business hours.
+                  Thank you for reaching out to Shreeji Wealth. A financial consultant from our Surat office will review your details and call you back within 2 business hours.
                 </p>
                 <button
                   onClick={() => setStatus("idle")}
@@ -176,7 +186,7 @@ export default function Contact() {
                       required
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="e.g. +91 98765 43210"
+                      placeholder="e.g. +91 99798 69788"
                       className="w-full px-4 py-2.5 rounded-lg text-xs bg-white/5 border border-shreeji-border text-white placeholder-shreeji-text-secondary focus:outline-none focus:border-shreeji-accent transition-colors"
                     />
                   </div>
@@ -248,12 +258,12 @@ export default function Contact() {
                   <MapPin className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-semibold text-white">Shreeji Wealth Advisory Desk</h4>
-                  <p className="text-xs text-shreeji-text-secondary mt-1">Ahmedabad HQ Office Complex, Gujarat, India</p>
+                  <h4 className="text-sm font-semibold text-white">Shreeji Wealth & Consultants</h4>
+                  <p className="text-xs text-shreeji-text-secondary mt-1">Pal-Adajan, Surat, Gujarat, India</p>
                 </div>
                 <div className="pt-2">
                   <a
-                    href="https://maps.google.com"
+                    href="https://maps.google.com/maps?q=315,+Western+Business+Hub,+Green+City+Road,+Pal-Adajan,+Surat"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 rounded-full text-[10px] font-semibold text-white bg-white/5 hover:bg-white/10 border border-white/10 transition-colors"

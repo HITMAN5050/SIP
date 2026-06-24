@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { TrendingUp, Phone, Mail, MapPin, ArrowUpRight } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -15,16 +15,44 @@ export default function Footer() {
           
           {/* Brand Info */}
           <div className="flex flex-col space-y-4">
-            <Link href="/" className="flex items-center space-x-2 group">
-              <div className="h-9 w-9 rounded-lg bg-gradient-to-br from-shreeji-primary to-shreeji-accent flex items-center justify-center shadow-md shadow-shreeji-accent/10">
-                <TrendingUp className="h-4 w-4 text-white" />
+            <Link href="/" className="flex items-center space-x-3 group">
+              <div className="h-9 w-9 shrink-0">
+                <svg className="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  {/* Left/Top Part of stylized 'S' - White/Silver */}
+                  <path
+                    d="M28 58C25 45 32 30 48 25C64 20 74 27 75 33L62 38C61 34 56 30 49 32C41 33 37 40 39 48L28 58Z"
+                    fill="#F8FAFC"
+                  />
+                  {/* Right/Bottom Part of stylized 'S' - Yellow/Gold */}
+                  <path
+                    d="M72 42C75 55 68 70 52 75C36 80 26 73 25 67L38 62C39 66 44 70 51 68C59 67 63 60 61 52L72 42Z"
+                    fill="#C6A15B"
+                  />
+                  {/* Stylized sharp diagonal cuts separating the pieces */}
+                  <path
+                    d="M25 67L75 33L70 30L20 64L25 67Z"
+                    fill="url(#goldSilverGradFooter)"
+                    opacity="0.15"
+                  />
+                  {/* Small Yellow Triangle at the top right */}
+                  <path
+                    d="M70 20L78 20L78 28L70 20Z"
+                    fill="#C6A15B"
+                  />
+                  <defs>
+                    <linearGradient id="goldSilverGradFooter" x1="20" y1="64" x2="75" y2="33" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#F8FAFC" />
+                      <stop offset="1" stopColor="#C6A15B" />
+                    </linearGradient>
+                  </defs>
+                </svg>
               </div>
               <div className="flex flex-col">
                 <span className="font-display font-bold text-base tracking-wider text-shreeji-text uppercase">
                   Shreeji Wealth
                 </span>
                 <span className="text-[9px] tracking-[0.2em] font-medium text-shreeji-gold uppercase">
-                  Wealth Advisory
+                  Grow More With Us
                 </span>
               </div>
             </Link>
@@ -72,11 +100,6 @@ export default function Footer() {
                   SIP Calculator
                 </Link>
               </li>
-              <li>
-                <Link href="/blog" className="hover:text-shreeji-accent transition-colors">
-                  Resources & Blog
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -122,24 +145,34 @@ export default function Footer() {
             <div className="flex items-start space-x-2.5 text-sm">
               <MapPin className="h-4 w-4 text-shreeji-accent mt-1 shrink-0" />
               <span>
-                302, Premium Trade Center,
+                315, Western Business Hub,
                 <br />
-                Financial District, SG Highway,
+                B/h. Trinity Business Park, Green City Road,
                 <br />
-                Ahmedabad, Gujarat - 380054
+                Pal-Adajan, Surat, Gujarat - 394510
               </span>
             </div>
-            <div className="flex items-center space-x-2.5 text-sm">
-              <Phone className="h-4 w-4 text-shreeji-accent shrink-0" />
-              <a href="tel:+919876543210" className="hover:text-shreeji-accent transition-colors">
-                +91 98765 43210
-              </a>
+            <div className="flex items-start space-x-2.5 text-sm">
+              <Phone className="h-4 w-4 text-shreeji-accent shrink-0 mt-1" />
+              <div className="flex flex-col space-y-1">
+                <a href="tel:+919979869788" className="hover:text-shreeji-accent transition-colors">
+                  +91 99798 69788 (Sanjay S.)
+                </a>
+                <a href="tel:+919909002988" className="hover:text-shreeji-accent transition-colors">
+                  +91 99090 02988 (Hiren S.)
+                </a>
+              </div>
             </div>
-            <div className="flex items-center space-x-2.5 text-sm">
-              <Mail className="h-4 w-4 text-shreeji-accent shrink-0" />
-              <a href="mailto:info@shreejiwealth.com" className="hover:text-shreeji-accent transition-colors">
-                info@shreejiwealth.com
-              </a>
+            <div className="flex items-start space-x-2.5 text-sm">
+              <Mail className="h-4 w-4 text-shreeji-accent shrink-0 mt-1" />
+              <div className="flex flex-col space-y-1">
+                <a href="mailto:contact@shreejiconsultants.com" className="hover:text-shreeji-accent transition-colors">
+                  contact@shreejiconsultants.com
+                </a>
+                <a href="mailto:shreejiwealthcreator@gmail.com" className="hover:text-shreeji-accent transition-colors">
+                  shreejiwealthcreator@gmail.com
+                </a>
+              </div>
             </div>
           </div>
 
@@ -148,7 +181,7 @@ export default function Footer() {
         {/* Financial Compliance / Regulatory Disclaimer */}
         <div className="mt-12 pt-8 border-t border-shreeji-border text-[11px] leading-relaxed text-shreeji-text-secondary/70">
           <p className="mb-3">
-            <strong>Regulatory Disclaimer:</strong> Mutual Fund investments are subject to market risks, read all scheme related documents carefully. Past performance is not indicative of future returns. Shreeji Wealth is a financial distributor/advisor registered with Association of Mutual Funds in India (AMFI) holding ARN/reg details.
+            <strong>Regulatory Disclaimer:</strong> Mutual Fund investments are subject to market risks. Please read all scheme-related documents carefully before investing. Insurance is the subject matter of solicitation. Please read the policy documents carefully before purchasing any insurance product. Past performance is not indicative of future returns. Shreeji Wealth is an authorized Mutual Fund Distributor partnered with NJ India Invest Pvt. Ltd. (NJ Wealth), one of India&apos;s leading financial distribution platforms.
           </p>
           <p>
             The tools and calculators provided on this website are for educational and illustrative purposes only. Projected returns are calculated based on mathematical formulations and should not be construed as investment advice or guaranteed gains.
